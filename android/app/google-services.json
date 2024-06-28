@@ -1,0 +1,82 @@
+{
+  "project_info": {
+    "project_number": "991126093083",
+    "project_id": "feedhumble-ccae5",
+    "storage_bucket": "feedhumble-ccae5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:991126093083:android:1b85f5a57deeff5a5ba7be",
+        "android_client_info": {
+          "package_name": "com.example.feed_humble"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "991126093083-t0sae1gmh58dkr6kr38a8qa0dmqrdnbm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDATsvO1FdWsPiUCEIFM1BNB5qyQj4jodk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "991126093083-t0sae1gmh58dkr6kr38a8qa0dmqrdnbm.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "991126093083-4k4oj4n5j5idgggj5088o979uok4bhdb.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.feedHumble"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:991126093083:android:c1782988707145e55ba7be",
+        "android_client_info": {
+          "package_name": "com.example.getx_constants"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "991126093083-t0sae1gmh58dkr6kr38a8qa0dmqrdnbm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDATsvO1FdWsPiUCEIFM1BNB5qyQj4jodk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "991126093083-t0sae1gmh58dkr6kr38a8qa0dmqrdnbm.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "991126093083-4k4oj4n5j5idgggj5088o979uok4bhdb.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.feedHumble"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
