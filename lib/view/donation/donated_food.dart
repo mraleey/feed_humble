@@ -315,7 +315,7 @@ class DonatedFood extends StatelessWidget {
             TextButton(
               onPressed: () {
                 FirebaseDatabase.instance
-                    .reference()
+                    .ref()
                     .child('donations')
                     .child(restaurant['key'])
                     .update({

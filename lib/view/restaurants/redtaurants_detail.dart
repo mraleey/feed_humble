@@ -13,12 +13,12 @@ class RestaurantsDetails extends StatelessWidget {
       Get.put(RestaurantController());
   final Map<dynamic, dynamic> restaurant;
   final Query activeQuery = FirebaseDatabase.instance
-      .reference()
+      .ref()
       .child('donations')
       .orderByChild('status')
       .equalTo('Active');
   final Query inactiveQuery = FirebaseDatabase.instance
-      .reference()
+      .ref()
       .child('donations')
       .orderByChild('status')
       .equalTo('InActive');
@@ -297,7 +297,7 @@ class RestaurantsDetails extends StatelessWidget {
             TextButton(
               onPressed: () {
                 FirebaseDatabase.instance
-                    .reference()
+                    .ref()
                     .child('donations')
                     .child(restaurant['key'])
                     .update({

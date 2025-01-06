@@ -20,10 +20,10 @@ class RestaurantController extends GetxController {
   RxBool hasData = false.obs;
 
   DatabaseReference databaseReference =
-      FirebaseDatabase.instance.reference().child('restaurants');
+      FirebaseDatabase.instance.ref().child('restaurants');
 
   Query query = FirebaseDatabase.instance
-      .reference()
+      .ref()
       .child('restaurants')
       .orderByChild('restaurantName');
 
@@ -65,14 +65,14 @@ class RestaurantController extends GetxController {
 
     String uniqueFileName = DateTime.now().millisecondsSinceEpoch.toString();
 
-    Reference reference = FirebaseStorage.instance.ref();
-    Reference imageReference = reference.child('images');
-    Reference referenceImageUpload = imageReference.child(uniqueFileName);
+    Reference ref = FirebaseStorage.instance.ref();
+    Reference imageReference = ref.child('images');
+    Reference refImageUpload = imageReference.child(uniqueFileName);
 
     try {
       isLoading.value = true;
-      await referenceImageUpload.putFile(selectedImage.value!);
-      imageUrl = await referenceImageUpload.getDownloadURL();
+      await refImageUpload.putFile(selectedImage.value!);
+      imageUrl = await refImageUpload.getDownloadURL();
     } catch (e) {
       Get.snackbar('Error', e.toString(),
           backgroundColor: Colors.red, colorText: Colors.white);

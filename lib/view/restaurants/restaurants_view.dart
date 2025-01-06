@@ -14,7 +14,7 @@ class RestaurantsPage extends StatelessWidget {
       .child('restaurants')
       .orderByChild('restaurantName');
   final Query donationsQuery = FirebaseDatabase.instance
-      .reference()
+      .ref()
       .child('donations')
       .orderByChild('restaurantName');
 

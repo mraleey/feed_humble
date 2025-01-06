@@ -20,7 +20,7 @@ class DonationController extends GetxController {
   Future<void> fetchRestaurantNames() async {
     try {
       DataSnapshot snapshot = (await FirebaseDatabase.instance
-              .reference()
+              .ref()
               .child('restaurants')
               .orderByChild('restaurantName')
               .once())
@@ -57,7 +57,7 @@ class DonationController extends GetxController {
         return;
       }
       DatabaseReference donationRef =
-          FirebaseDatabase.instance.reference().child('donations');
+          FirebaseDatabase.instance.ref().child('donations');
       await donationRef.push().set({
         'restaurantName': restaurantName,
         'restaurantAddress': restaurantAddress.text,
@@ -72,7 +72,7 @@ class DonationController extends GetxController {
       selectedRestaurantName.value = '';
       FocusScope.of(Get.context!).unfocus();
       DatabaseReference restaurantRef =
-          FirebaseDatabase.instance.reference().child('restaurants');
+          FirebaseDatabase.instance.ref().child('restaurants');
       String? restaurantKey;
       restaurantNameAddressMap.forEach((key, value) {
         if (key == restaurantName) {

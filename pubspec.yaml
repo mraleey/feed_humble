@@ -44,9 +44,9 @@ dependencies:
   google_maps_flutter:
   firebase_database:
   image_picker: ^1.0.8
-  firebase_storage: ^11.6.9
+  firebase_storage: ^12.3.7
   cloud_firestore:
-  fl_chart: ^0.68.0
+  fl_chart: ^0.69.2
 
 dev_dependencies:
   flutter_test:
@@ -57,7 +57,7 @@ dev_dependencies:
   # activated in the `analysis_options.yaml` file located at the root of your
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
-  flutter_lints: ^3.0.2
+  flutter_lints: ^5.0.0
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
